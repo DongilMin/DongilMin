@@ -7,4 +7,4 @@
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DongilMin&layout=compact)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DongilMin)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DongilMin)](https://github.com/anuraghazra/github-readme-stats)
