@@ -1,4 +1,5 @@
-# 👋 민동일
+# 👋 Hi, I'm Dongil Min  
+I'm interested in **DevOps** and **Cloud Engineering**.
 
 ## 📧 Contact
 - **Email**: [tasabi0826@gmail.com](mailto:tasabi0826@gmail.com)
