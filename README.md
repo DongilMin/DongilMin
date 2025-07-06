@@ -1,13 +1,3 @@
-[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=tasabi0824)](https://solved.ac/tasabi0824)
-
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DongilMin)](https://github.com/DongilMin/github-readme-stats)
-
-
-
-
-
-
 # 👋 민동일
 
 ## 📧 Contact
@@ -33,7 +23,7 @@
 ---
 
 ## 🛠 Tech Stack
-
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DongilMin)](https://github.com/DongilMin/github-readme-stats)
 **Backend**  
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
@@ -93,12 +83,4 @@ https://gist.github.com/DongilMin/6a0136be7e57b7be8c7f1f5d555b7c31
 
 ---
 
-## 💻 GitHub
-
-- https://github.com/dongilmin
-
----
-
-## 📊 알고리즘
-
-- **백준**: tasabi0824 (Gold III)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=tasabi0824)](https://solved.ac/tasabi0824)
