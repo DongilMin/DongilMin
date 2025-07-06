@@ -45,24 +45,20 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 ## 🌍 Open Source Contributions
 
 ### [1. Azure Co-op Translator](https://github.com/Azure/co-op-translator/pull/166)
-> GitHub Gist:  
-https://gist.github.com/DongilMin/1e1c4b2f78f7a61ddf28db1d8fef2130
+> GitHub Gist:  https://gist.github.com/DongilMin/1e1c4b2f78f7a61ddf28db1d8fef2130
 
 ### [2. Cloudify Blueprint Examples](https://github.com/cloudify-community/blueprint-examples/pull/350)
-> GitHub Gist:  
-https://gist.github.com/DongilMin/1cc1fc76cba758d1e4e6a4bce949e83d
+> GitHub Gist:  https://gist.github.com/DongilMin/1cc1fc76cba758d1e4e6a4bce949e83d
 
 ---
 
 ## 🧠 Projects
 
 ### [AI 기반 일기 및 커뮤니티 서비스](https://github.com/inha-cloud-project-09)
-> GitHub Gist:  
-https://gist.github.com/DongilMin/5d91e23ef1b2bba58bdf3f5fced06c20
+> GitHub Gist:  https://gist.github.com/DongilMin/5d91e23ef1b2bba58bdf3f5fced06c20
 
 ### 실시간 채팅 기반 영상 감상 및 감정 아카이빙 플랫폼
-> GitHub Gist:  
-https://gist.github.com/DongilMin/6a0136be7e57b7be8c7f1f5d555b7c31
+> GitHub Gist:  https://gist.github.com/DongilMin/6a0136be7e57b7be8c7f1f5d555b7c31
 
 ---
 
