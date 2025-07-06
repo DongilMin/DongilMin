@@ -24,7 +24,8 @@
 
 ## 🛠 Tech Stack
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DongilMin)](https://github.com/DongilMin/github-readme-stats)
-**Backend**  
+
+
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
