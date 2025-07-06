@@ -56,13 +56,6 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 
 ---
 
-## 🏆 Awards  
-- 2025 AI 해커톤 최우수상 ([ChainCert-Inha](https://github.com/2025-ChainCert-Inha))  
-- 2024 생성형 AI 콘텐츠 공모전 입상
-
-
----
-
 ## 🏆 Awards
 
 - **2025 AI 해커톤 최우수상**  
