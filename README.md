@@ -39,7 +39,7 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 ---
 
 ## 🌍 Open Source Contributions  
-- [Azure Co-op Translator](https://gist.github.com/DongilMin/1e1c4b2f78f7a61ddf28db1d8fef2130)  
+
 - [Cloudify Blueprint Examples](https://gist.github.com/DongilMin/1cc1fc76cba758d1e4e6a4bce949e83d)
 
 ---
