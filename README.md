@@ -7,13 +7,13 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 ## 📧 Contact  
 - 📬 Email: [tasabi0826@gmail.com](mailto:tasabi0826@gmail.com)
 
----
+--- 
 
 ## 🪪 Certificates  
-- AWS Solutions Architect – Associate (SAA-C03)  
-- AWS SysOps Administrator – Associate (SOA-C02)  
-- KCNA : Kubernetes and Cloud Native Associate  
-- HashiCorp Certified Terraform Associate (003)  
+- AWS Certificated Solutions Architect – Associate (SAA - C03)  
+- AWS Certificated SysOps Administrator – Associate (SOA - C02)  
+- AWS Certificated Developer - Associate (DVA - C02)
+- HashiCorp Certified Terraform Associate (HCTA0-003)
 - SQLD (SQL Developer)  
 - 리눅스마스터 2급  
 
@@ -59,8 +59,8 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 
 ## 🏆 Awards
 
-- **2025 AI 해커톤 최우수상**  
-- **2024 생성형 AI 콘텐츠 공모전 입상**
+- **2025 AI 해커톤 최우수상(주식회사 나눙엔젤스, 인하대학교 블록체인센터)**  
+- **2024 생성형 AI 콘텐츠 공모전 입상(인하대학교)**
 
 ---
 
