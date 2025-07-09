@@ -20,7 +20,7 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 ---
 
 ## 🎓 Education  
-- 인하대학교 컴퓨터공학과 (2020 ~ )
+- 인하대학교 컴퓨터공학과 (2020 - 2025)
 
 ---
 
@@ -47,8 +47,7 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 
 ## 🏆 Awards
 
-- **2025 AI 해커톤 최우수상(주식회사 나눙엔젤스, 인하대학교 블록체인센터)**  
-- **2024 생성형 AI 콘텐츠 공모전 입상(인하대학교)**
+- **2025 AI 해커톤 최우수상(주식회사 나눔엔젤스, 인하대학교 블록체인센터)**  
 
 ---
 
