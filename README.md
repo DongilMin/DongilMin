@@ -38,18 +38,6 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 
 ---
 
-## 🌍 Open Source Contributions  
-
-- [Cloudify Blueprint Examples](https://gist.github.com/DongilMin/1cc1fc76cba758d1e4e6a4bce949e83d)
-
----
-
-## 🧠 Projects  
-- [AWS AI 기반 일기 및 커뮤니티 서비스](https://gist.github.com/DongilMin/5d91e23ef1b2bba58bdf3f5fced06c20)  
-- [실시간 채팅 기반 영상 감상 및 감정 아카이빙 플랫폼](https://gist.github.com/DongilMin/6a0136be7e57b7be8c7f1f5d555b7c31)
-
----
-
 ## 🤝 Activities  
 - UMC 8기 Node.js 파트  
 - CJ 올리브네트웍스 클라우드 웨이브 6기  
