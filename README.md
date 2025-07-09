@@ -23,13 +23,12 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 - 인하대학교 컴퓨터공학과 (2020 - 2025)
 
 ---
----
 
 ## 🧩 Open Source Contributions
 
 - **Azure Co-op Translator**  
   [🔗 PR #166 – Improve error messages for configuration failures](https://github.com/Azure/co-op-translator/pull/166)
----
+  
 ---
 ## 🛠 Tech Stack
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dongilmin&layout=compact)](https://github.com/dongilmin/github-readme-stats)
