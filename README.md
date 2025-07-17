@@ -38,7 +38,6 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 - UMC 8기 Node.js 파트  
 - CJ 올리브네트웍스 클라우드 웨이브 6기  
 - AWS Cloud Club ([Bedrock AI Chatbot](https://github.com/DongilMin/Bedrock_AI_Chatbot))  
-- **[ON-AIR-mate](https://github.com/ON-AIR-mate)** – 실시간 영상 기반 채팅 플랫폼 서비스  
 
 ---
 
