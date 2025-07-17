@@ -52,7 +52,7 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 
 - **[감정 벡터 기반 AI 일기 플랫폼 서비스](https://github.com/inha-cloud-project-09)**  
   사용자의 글과 음성을 기반으로 감정을 분석하고, 이에 맞는 일기 작성을 보조하는 과거 경험 회고와 회복 루틴을 제공하는 AI 일기 서비스.  
-  AWS Bedrock, Comprehend, Polly 등을 활용해 유저의 글과 음성에서 감정 벡터를 추출하고 맞춤형 솔루션을 제공한 뒤 이 값들을 클러스터링하여 유사한 감정 상태의 사용자 커뮤니티를 추천.  
+  AWS Bedrock, Comprehend, Polly 등을 활용해 유저의 글과 음성에서 감정 벡터를 추출하고 자체 개발한 AI 모델에서 맞춤형 솔루션을 제공한 뒤 이 벡터값들을 클러스터링하여 유사한 감정 상태의 사용자 커뮤니티를 추천.  
   전체 시스템은 Lambda, SNS, SQS 기반의 서버리스 이벤트 아키텍처로 구성되어 자동화된 감정 분석 파이프라인을 구현
 
 - **[ON-AIR-mate](https://github.com/ON-AIR-mate/Node.js)**  
