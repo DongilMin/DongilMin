@@ -43,7 +43,7 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 
 ## 🧩 Open Source Contributions
 
-- **Azure Co-op Translator**  
+- **Azure/Co-op Translator**  
   [🔗 PR #166 – Improve error messages for configuration failures](https://github.com/Azure/co-op-translator/pull/166)
 ---
 
