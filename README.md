@@ -54,7 +54,7 @@ I'm interested in **DevOps** and **Cloud Engineering**.
   AWS Bedrock, Comprehend, Polly 등을 활용해 유저의 글과 음성에서 감정 벡터를 추출하고 자체 개발한 AI 모델에서 맞춤형 솔루션을 제공한 뒤 이 벡터값들을 클러스터링하여 유사한 감정 상태의 사용자 커뮤니티를 추천.  
   전체 시스템은 Lambda, SNS, SQS 기반의 서버리스 이벤트 아키텍처로 구성되어 자동화된 감정 분석 파이프라인을 구현
 
-- **[ON-AIR-mate](https://github.com/ON-AIR-mate/Node.js)**  
+- **[ON-AIR-mate/back-end](https://github.com/ON-AIR-mate/Node.js)**  
   TypeScript 기반 Node.js로 웹소켓 프로그래밍을 통해 실시간 영상 공유, 채팅이 가능한 플랫폼.
   사용자는 같은 영상을 함께 보며 채팅방에서 실시간으로 소통할 수 있음.
 
