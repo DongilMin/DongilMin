@@ -53,5 +53,3 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 - **2025 AI 해커톤 최우수상(주식회사 나눔엔젤스, 인하대학교 블록체인센터)**  
 
 ---
-
-[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=tasabi0824)](https://solved.ac/tasabi0824)
