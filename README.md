@@ -24,7 +24,7 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 ---
 
 ## 🛠 Tech Stack
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=dongilmin&hide=stars,contribs&count_private=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dongilmin&layout=compact)](https://github.com/dongilmin)
 
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
