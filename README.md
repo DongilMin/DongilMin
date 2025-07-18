@@ -24,7 +24,6 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 ---
 
 ## 🛠 Tech Stack
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dongilmin&layout=compact)](https://github.com/dongilmin)
 
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
