@@ -12,9 +12,10 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 
 ## 🪪 Certificates  
 
-| <img src="https://github.com/user-attachments/assets/a7c22d77-6380-4654-b1d5-60cce657c4eb" width="100"/> | <img src="https://github.com/user-attachments/assets/fd25ce71-7455-4c69-a79a-4c59432c32dd" width="100"/> | <img src="https://github.com/user-attachments/assets/bce87582-e636-492b-99ed-fdd0f2afea39" width="100"/> | <img src="https://github.com/user-attachments/assets/884026da-b1a3-4f94-b3ba-15d1b8fd8b52" width="100"/> | <img src="https://img.shields.io/badge/SQLD-SQL%20Developer-4479A1?logo=mysql&logoColor=white" width="100"/> | <img src="https://img.shields.io/badge/Linux%20Master-2급-FCC624?logo=linux&logoColor=black" width="100"/> |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| **CKA** | **AWS DOP** | **AWS SAA** | **AWS SOA** | **SQLD** | **Linux Master 2급** |
+| <img src="https://github.com/user-attachments/assets/a7c22d77-6380-4654-b1d5-60cce657c4eb" width="100"/> | <img src="https://github.com/user-attachments/assets/fd25ce71-7455-4c69-a79a-4c59432c32dd" width="100"/> | <img src="https://github.com/user-attachments/assets/bce87582-e636-492b-99ed-fdd0f2afea39" width="100"/> | <img src="https://github.com/user-attachments/assets/884026da-b1a3-4f94-b3ba-15d1b8fd8b52" width="100"/> | <img src="https://github.com/user-attachments/assets/97f7e6d2-fcbf-4920-b429-9e1d27829da1" width="100"/> | <img src="https://img.shields.io/badge/SQLD-SQL%20Developer-4479A1?logo=mysql&logoColor=white" width="100"/> | <img src="https://img.shields.io/badge/Linux%20Master-2급-FCC624?logo=linux&logoColor=black" width="100"/> |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **CKA** | **AWS DOP** | **AWS SAA** | **AWS SOA** | **Terraform Associate** | **SQLD** | **Linux Master 2급** |
+
 
 ---
 
@@ -77,7 +78,7 @@ I'm interested in **DevOps** and **Cloud Engineering**.
 
 - **Microsoft Azure / Co-op Translator**  
   [🔗 PR #166 – Improve error messages for configuration failures](https://github.com/Azure/co-op-translator/pull/166)  
-  파이썬 기반 다국어 번역기 모듈의 오류 메시지 로직을 개선하여, 문제의 원인과 해결 방법이 명확히 드러나도록 구조를 리팩터링함.
+  **파이썬 소스 코드를 수정하여, 문제의 원인과 해결 방법이 명확히 드러나도록 구조를 리팩터링함.**
 
 ---
 
