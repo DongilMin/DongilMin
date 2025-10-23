@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!DOCTYPE html>
+    <html lang="ko">
+        <!DOCTYPE html>
+        <html lang="ko">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <title>민동일 - 포트폴리오</title>
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap');
+        
+            *{margin:0;padding:0;box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+            body{font-family:'Noto Sans KR',sans-serif;background:#f4f4f4;font-size:10pt;line-height:1.6;color:#1f2937;}
+        
+            /* ===============================
+               커버 페이지: 2열 × 3행 (전폭 하단: 자격증)
+               =============================== */
+            .cover-page{
+              width:210mm;height:297mm;margin:20px auto;background:#fff;
+              display:grid;grid-template-columns:400px 1fr;grid-template-rows:auto auto auto;row-gap:16px;
+              page-break-after:always;border:1px solid #eef2f6;border-radius:8px;box-shadow:0 0 18px rgba(0,0,0,.06);
+            }
+        
+            /* 왼쪽: 사진 + CONTACT (기존 크기 살짝 축소) */
+            .profile-section{
+              grid-column:1/2;grid-row:1/2;background:#fff;padding:44px 32px 24px 32px;
+              display:flex;flex-direction:column;align-items:flex-start;border-right:1px solid #eef2f6;color:#1f2937;
+            }
+            .profile-image{
+              width:300px;height:395px;margin-bottom:18px;background:#fff;border:1px solid #e5e7eb;border-radius:10px;
+              display:flex;align-items:center;justify-content:center;overflow:hidden;
+            }
+            .profile-image img{width:100%;height:100%;object-fit:contain;}
+            .contact-section{width:100%;margin-top:8px;}
+            .contact-title{font-size:1em;font-weight:800;color:#0d6efd;margin-bottom:8px;letter-spacing:.6px;}
+            .contact-item{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:.92em;color:#374151;}
+            .contact-icon{font-size:1.05em;}
+        
+            /* 오른쪽: 제목/PROFILE/소개문 + 업적 + (새)요약박스 */
+            .content-section{
+              grid-column:2/3;grid-row:1/2;background:#fff;padding:44px 36px 0 36px;
+              display:flex;flex-direction:column;justify-content:flex-start;
+            }
+            .main-title{font-size:2.35em;font-weight:900;color:#111827;line-height:1.22;margin-bottom:10px;max-width:560px;}
+            .profile-label{font-size:.92em;font-weight:800;color:#0d6efd;letter-spacing:1.4px;margin-bottom:8px;max-width:560px;}
+            .profile-desc{font-size:.98em;color:#374151;line-height:1.75;margin-bottom:12px;max-width:560px;}
+        
+            /* 업적(텍스트만) — 간결하게 */
+            .achievements{margin-top:10px;display:grid;grid-template-columns:1fr;row-gap:10px;}
+            .achievement-item{background:transparent;border:none;padding:0;}
+            .achievement-title{font-weight:800;color:#111827;font-size:.98em;margin-bottom:3px;}
+            .achievement-desc{font-size:.92em;color:#4b5563;line-height:1.55;}
+        
+            /* ===== 새 중간 요약 박스 ===== */
+            .mid-card{
+              margin-top:12px;padding:12px 14px;border:1px solid #e5e7eb;border-radius:8px;background:#ffffff;
+            }
+            .mid-card .section-title{
+              font-size:.88em;font-weight:800;letter-spacing:1.1px;color:#0d6efd;margin-bottom:6px;
+            }
+            .mid-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;}
+            .mid-card .subtitle{font-weight:800;color:#111827;margin:6px 0 4px;font-size:.96em;}
+            .mid-card p,.mid-card li{font-size:.9em;line-height:1.5;color:#374151;}
+            .mid-card .muted{color:#6b7280;font-size:.86em;}
+            .mid-card ul{list-style:none;padding-left:0;margin:0;}
+            .mid-card ul li{position:relative;padding-left:12px;margin:2px 0;}
+            .mid-card ul li::before{content:"•";position:absolute;left:0;color:#6b7280;}
+            .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;}
+            .chip{font-size:.84em;padding:4px 8px;border:1px solid #e5e7eb;border-radius:999px;background:#fafafa;white-space:nowrap;}
+        
+            /* 하단: 자격증 8개(전폭) */
+            .tech-stack{grid-column:1/-1;grid-row:3/4;padding:12px 24px 16px;border-top:1px solid #e6ebf2;background:#fbfdff;border-radius:0 0 8px 8px;}
+            .tech-icons{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;margin-top:10px;}
+            .tech-icon{width:56px;height:56px;background:#fff;border:1px solid #e6eef7;border-radius:10px;display:flex;align-items:center;justify-content:center;}
+            .tech-icon img{width:38px;height:38px;object-fit:contain;}
+        
+            /* ===============================
+               프로젝트 페이지 (기존 유지)
+               =============================== */
+            .page{width:210mm;min-height:297mm;padding:25mm 20mm;margin:20px auto;background:#fff;box-shadow:0 0 15px rgba(0,0,0,.08);page-break-after:always;}
+            .page:last-child{page-break-after:auto;}
+            .project-header{text-align:center;margin-bottom:25px;}
+            .project-header h1{font-size:2em;color:#111827;margin-bottom:5px;}
+            .project-header a{color:#0d6efd;text-decoration:none;}
+            .project-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;}
+            .project-summary-box{background:#f8f9fa;padding:15px;border-radius:5px;font-size:.9em;}
+            .project-summary-box h3{color:#111827;border-bottom:1.5px solid #e5e7eb;padding-bottom:8px;margin-bottom:10px;font-size:1.05em;}
+            .project-summary-box ul{list-style-position:inside;padding-left:5px;}
+            .project-summary-box ul li{margin-bottom:5px;}
+            .project-section h2{font-size:1.45em;color:#111827;border-bottom:1.5px solid #0d6efd;padding-bottom:8px;margin-bottom:15px;}
+            .project-section h3{font-size:1.05em;color:#1f2937;margin-top:15px;margin-bottom:10px;}
+            .project-section ul{list-style:none;}
+            .project-section ul li{margin-bottom:12px;padding-left:18px;position:relative;}
+            .project-section ul li::before{content:'✓';position:absolute;left:0;color:#0d6efd;font-weight:700;}
+            .project-section ul ul{margin-top:8px;padding-left:20px;}
+            .project-section strong{font-weight:700;color:#111827;}
+            .image-container,.image-grid-2col{width:100%;margin:5px 0;border:1px solid #e5e7eb;border-radius:5px;padding:5px;box-sizing:border-box;}
+            .image-grid-2col{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+            .image-container img,.image-grid-2col img{width:100%;height:auto;border-radius:3px;object-fit:contain;}
+            .section h2{color:#111827;font-size:1.35em;margin-bottom:15px;padding-bottom:8px;border-bottom:1.5px solid #0d6efd;}
+            .activity-item{background:#f8f9fa;padding:15px;border-radius:5px;border-left:3px solid #8e44ad;}
+            .activity-item h3 a{color:#111827;text-decoration:none;}
+            .activity-item h3 a:hover{text-decoration:underline;}
+        
+            /* 인쇄 최적화 */
+            @media print{
+              body{background:#fff;font-size:9.5pt;}
+              .cover-page{margin:0;box-shadow:none;border:none;border-radius:0;}
+              .profile-section{border-right:1px solid #ddd;}
+              .page{box-shadow:none;margin:0;padding:20mm;min-height:297mm;}
+              .project-summary-box,.activity-item{background:#f8f9fa !important;}
+            }
+        
+            /* 반응형 */
+            @media (max-width:1200px){
+              .cover-page{grid-template-columns:1fr;grid-template-rows:auto auto auto;height:auto;}
+              .profile-section{grid-column:1;grid-row:1;padding:32px 24px;border-right:0;border-bottom:1px solid #eef2f6;}
+              .content-section{grid-column:1;grid-row:2;padding:24px;}
+              .mid-grid{grid-template-columns:1fr;}
+              .tech-stack{grid-column:1;grid-row:3;border-radius:0;padding:12px 20px;}
+              .tech-icons{grid-template-columns:repeat(4,1fr);}
+            }
+          </style>
+        </head>
+        
+        <body>
+        
+          <!-- ================== 커버 페이지 ================== -->
+          <div class="cover-page">
+        
+            <!-- 왼쪽: 사진 + CONTACT -->
+            <div class="profile-section">
+              <div class="profile-image">
+                <img src="mypicture.png" alt="민동일 프로필 사진">
+              </div>
+        
+              <div class="contact-section">
+                <div class="contact-title">CONTACT</div>
+                <div class="contact-item">
+                  <span class="contact-icon">📞</span><span>010-4021-2420</span>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">✉️</span><span>tasabi0826@gmail.com</span>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 오른쪽: 제목/PROFILE/소개문 + 업적 + (새 요약 박스) -->
+            <div class="content-section">
+              <h1 class="main-title">문제의 본질을 파악하고<br>해결하는 엔지니어</h1>
+        
+              <div class="profile-label">PROFILE</div>
+              <p class="profile-desc">
+                문제의 표면이 아닌 본질을 파악하고,<br>
+                원인을 명확히 규명해 해결함으로써<br>
+                시스템의 신뢰성을 책임지는 엔지니어<br>
+                민동일입니다.
+              </p>
+        
+              <!-- 업적 (간결 텍스트) -->
+              <div class="achievements">
+                <div class="achievement-item">
+                  <div class="achievement-title">오픈소스 기여 경험</div>
+                  <div class="achievement-desc">파이썬 코드 수정으로 사용자들의 편의성 개선</div>
+                </div>
+                <div class="achievement-item">
+                  <div class="achievement-title">인프라 구축 경험</div>
+                  <div class="achievement-desc">클라우드 환경에서 안정성과 효율성을 중점으로 인프라를 설계 및 구축</div>
+                </div>
+                <div class="achievement-item">
+                  <div class="achievement-title">서버 효율화 및 실시간 기능 개발</div>
+                  <div class="achievement-desc">싱글톤 패턴으로 메모리 사용률 개선, Redis를 이용한 실시간 알림 시스템 구현</div>
+                </div>
+              </div>
+        
+              <!-- ===== 새 중간 요약 박스 ===== -->
+              <div class="mid-card">
+                <div class="section-title">경험 · 활동 · 교육 (요약)</div>
+                <div class="mid-grid">
+                  <!-- 좌측: CJ 교육 -->
+                  <div>
+                    <div class="subtitle">CJ올리브네트웍스 교육 이수 (2025.06–08)</div>
+                    <p class="muted">클라우드 웨이브 · 총 400h · 팀장</p>
+                    <ul>
+                      <li>멀티 AZ VPC(퍼블릭/프라이빗) 네트워크 설계</li>
+                      <li>Prometheus·Grafana 모니터링 대시보드 구축</li>
+                      <li>Athena 기반 로그 분석 및 시각화</li>
+                      <li>웜 스탠바이 DR 구성 및 모의 보안사고 테스트</li>
+                      <li>FinOps: 태깅/비용 추적 + Lambda로 야간 자동 축소 & 스토리지 등급 전환</li>
+                    </ul>
+                  </div>
+                  <!-- 우측: 동아리 & 자격/수상 -->
+                  <div>
+                    <div class="subtitle">University MakeUs Challenge 서버 파트 수료</div>
+                    <ul>
+                      <li>Node.js·SQL 스터디 후 서비스 출시 목표 프로젝트</li>
+                      <li>EC2·RDS·S3 인프라 구축, CI/CD 파이프라인</li>
+                      <li>Node.js API 개발</li>
+                    </ul>
+        
+                    <div class="subtitle" style="margin-top:8px;">자격 · 어학 · 수상 (핵심)</div>
+                    <div class="chips">
+                      <span class="chip">AWS DevOps Pro (’25.09)</span>
+                      <span class="chip">CKA (’25.09)</span>
+                      <span class="chip">AWS SysOps (’25.08)</span>
+                      <span class="chip">AWS SA (’25.03)</span>
+                      <span class="chip">리눅스마스터 2급 (’25.03)</span>
+                      <span class="chip">SQLD (’24.12)</span>
+                      <span class="chip">TOEIC Speaking IH (’25.10)</span>
+                      <span class="chip">AI 해커톤 최우수상 (’25.03)</span>
+                      <span class="chip">생성형 AI 공모전 입상 (’24.12)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ===== /새 중간 요약 박스 ===== -->
+            </div>
+        
+            <!-- 하단: 자격증 아이콘 전폭 -->
+            <div class="tech-stack">
+              <div class="tech-icons">
+                <div class="tech-icon"><img src="python-logo.png" alt="Python"></div>
+                <div class="tech-icon"><img src="aws-logo.png" alt="AWS"></div>
+                <div class="tech-icon"><img src="mysql-logo.png" alt="MySQL"></div>
+                <div class="tech-icon"><img src="nodejs-logo.png" alt="Node.js"></div>
+                <div class="tech-icon"><img src="linux-logo.png" alt="Linux"></div>
+                <div class="tech-icon"><img src="docker-logo.png" alt="Docker"></div>
+                <div class="tech-icon"><img src="typescript-logo.png" alt="TypeScript"></div>
+                <div class="tech-icon"><img src="kubernetes-logo.png" alt="Kubernetes"></div>
+              </div>
+            </div>
+        
+          </div>
+          <!-- ================== /커버 페이지 ================== -->
+        
+          <!-- ===== 이하 프로젝트 페이지들 (원문 유지, 필요시 수정) ===== -->
+          <div class="page">
+            <header class="project-header">
+              <h1>Cloud Infrastructure for E-Commerce Platform</h1>
+              <a href="https://github.com/cloud-wave-best-zizon" target="_blank">https://github.com/cloud-wave-best-zizon</a>
+            </header>
+            <div class="project-grid">
+              <div class="project-summary-box">
+                <h3>1. 프로젝트 개요</h3>
+                <ul>
+                  <li><strong>목표:</strong> 실제 트래픽 기반 성능, 보안, 비용을 고려한 최적의 클라우드 인프라 구축</li>
+                  <li><strong>참여 인원:</strong> 5명</li>
+                  <li><strong>주요 역할:</strong> 팀장 및 PM, API 개발, EKS 클러스터 및 클라우드 아키텍처 구축, 보안 시스템 설계 등</li>
+                </ul>
+              </div>
+              <div class="project-summary-box">
+                <h3>3. 기술적 문제 해결</h3>
+                <ul>
+                  <li><strong>문제 발생:</strong> mTLS 구축 중, EKS AMI 설정 충돌로 Kubelet 시작 실패 및 ASG 노드 무한 루프 발생.</li>
+                  <li><strong>긴급 조치/분석:</strong> ASG 용량을 0으로 설정해 무한 생성을 중단 후 로그 분석</li>
+                  <li><strong>최종 해결:</strong> AWS 네이티브 솔루션(ALB, ACM Private CA)으로 전환</li>
+                </ul>
+              </div>
+            </div>
+            <section class="project-section">
+              <h2>2. 주요 역할 및 기여 (아키텍처)</h2>
+              <ul>
+                <li><strong>고성능/고효율 아키텍처 설계:</strong> Java(x86)를 Go(ARM64)로 리팩토링하여 성능 개선 및 비용 절감. EKS 기반 MSA와 Kafka 메시지 큐를 도입하여 시스템 결합도 최소화</li>
+              </ul>
+              <h3>전체 시스템 아키텍처</h3>
+              <div class="image-container"><img src="oliveyoung-aws-architecture.png" alt="올리브영 프로젝트 AWS 아키텍처"></div>
+            </section>
+          </div>
+        
+          <div class="page">
+            <header class="project-header">
+              <h1>Cloud Infrastructure for E-Commerce Platform</h1>
+            </header>
+            <section class="project-section">
+              <h2>2. 주요 역할 및 기여 (성능 및 비용)</h2>
+              <ul>
+                <li><strong>실제 트래픽 기반 자동 확장(Autoscaling) 시스템 구축:</strong> 실제 세일 기간 트래픽으로 부하 테스트를 진행하여 HPA 임계치를 설정하고, Karpenter로 노드 자동 확장 환경 구현</li>
+              </ul>
+              <h3>성능 모니터링 대시보드</h3>
+              <div class="image-container"><img src="oliveyoung-grafana-dashboard.png" alt="그라파나 성능 모니터링 대시보드"></div>
+              <h3>모든 인프라에 태그를 붙여 비용 추적</h3>
+              <div class="image-container"><img src="oliveyoung-tag-price.png" alt="태그 기반 비용 추적"></div>
+            </section>
+          </div>
+        
+          <div class="page">
+            <header class="project-header">
+              <h1>Cloud Infrastructure for E-Commerce Platform</h1>
+            </header>
+            <section class="project-section">
+              <h2>2. 주요 역할 및 기여 (보안 및 DevOps)</h2>
+              <ul>
+                <li><strong>보안 및 안정성을 고려한 DevOps 파이프라인 구축:</strong> GitLab CI/CD와 블루/그린 배포 전략으로 무중단 배포 파이프라인 구축. AWS VPN 접근 제어 및 도쿄 리전 DR 환경 구성 (RTO 2시간, RPO 15분)</li>
+                <li><strong>다계층 보안 설계:</strong>
+                  <ul>
+                    <li><strong>사전 방어:</strong> 실제 보안 사고 기반 모의 해킹 테스트</li>
+                    <li><strong>인증/통신:</strong> SPIRE 기반 mTLS로 Zero-Trust</li>
+                    <li><strong>런타임:</strong> Falco 도입</li>
+                    <li><strong>정적 분석:</strong> SonarQube 자동 스캔</li>
+                  </ul>
+                </li>
+              </ul>
+              <h3>보안 로깅 및 리포팅</h3>
+              <div class="image-grid-2col">
+                <img src="olive-young-opensearch-dashboard.png" alt="오픈서치 대시보드">
+                <img src="oliveyoung-athena-query.png" alt="Athena 로그 쿼리">
+              </div>
+              <h3>CI/CD 파이프라인 및 시크릿 키 자동 탐지</h3>
+              <div class="image-grid-2col">
+                <img src="oliveyoung-cicd.png" alt="CI/CD 파이프라인">
+                <img src="oliveyonug-ci-secretkey-block.png" alt="시크릿 키 자동 차단">
+              </div>
+            </section>
+          </div>
+        
+          <div class="page">
+            <header class="project-header">
+              <h1>AI 기반 일기 서비스 플랫폼</h1>
+              <a href="https://github.com/inha-cloud-project-09" target="_blank">https://github.com/inha-cloud-project-09</a>
+            </header>
+            <div class="project-grid">
+              <div class="project-summary-box">
+                <h3>1. 프로젝트 개요</h3>
+                <ul>
+                  <li><strong>목표:</strong> 서버리스 인프라 기반의 AI 서비스 개발</li>
+                  <li><strong>참여 인원:</strong> 5명</li>
+                  <li><strong>주요 역할:</strong> Python 백엔드 API, 서버리스 설계/구축, 프론트 프로토타입</li>
+                </ul>
+              </div>
+              <div class="project-summary-box">
+                <h3>3. 적용 기술</h3>
+                <ul>
+                  <li><strong>Backend:</strong> Python, FastAPI</li>
+                  <li><strong>Infra/Cloud:</strong> AWS Lambda, Bedrock, Comprehend, API Gateway, SNS, SQS, CloudWatch, S3, RDS</li>
+                </ul>
+              </div>
+            </div>
+            <section class="project-section">
+              <h2>2. 주요 역할 및 기여</h2>
+              <ul>
+                <li><strong>AI 기반 데이터 처리 API:</strong> Bedrock·Comprehend로 감정 10D 벡터화</li>
+                <li><strong>이벤트 주도 서버리스:</strong> Lambda 모듈화, SNS/SQS 비동기, CloudWatch Events 일일 파이프라인</li>
+                <li><strong>감정 벡터 k-means 군집화 API:</strong> 10D 감정 입력 → k-means → 군집 라벨·센트로이드 반환</li>
+              </ul>
+            </section>
+            <div class="image-grid-2col">
+              <img src="ai-diary-ai-service-picture.png" alt="AI 일기 서비스 UI">
+              <img src="ai-diary-cloud-architecture.png" alt="클라우드 아키텍처">
+            </div>
+          </div>
+        
+          <div class="page">
+            <header class="project-header">
+              <h1>웹소켓 기반 실시간 채팅 및 영상 공유 플랫폼 (서비스 출시 프로젝트)</h1>
+              <a href="https://github.com/ON-AIR-mate" target="_blank">https://github.com/ON-AIR-mate</a>
+            </header>
+            <div class="project-grid">
+              <div class="project-summary-box">
+                <h3>1. 프로젝트 개요</h3>
+                <ul>
+                  <li><strong>목표:</strong> 실시간 영상 공유 및 채팅 플랫폼 개발</li>
+                  <li><strong>참여 인원:</strong> 10명</li>
+                  <li><strong>주요 역할:</strong> Node.js API, 인프라 구축, CI/CD</li>
+                </ul>
+              </div>
+              <div class="project-summary-box">
+                <h3>3. 적용 기술</h3>
+                <ul>
+                  <li><strong>Backend:</strong> Node.js, Express, Redis, WebSocket</li>
+                  <li><strong>Infra/DevOps:</strong> AWS EC2, S3, RDS, GitHub Actions</li>
+                </ul>
+              </div>
+            </div>
+            <section class="project-section">
+              <h2>2. 주요 역할 및 기여</h2>
+              <ul>
+                <li><strong>Redis Pub/Sub 알림:</strong> 지연 낮은 실시간 알림</li>
+                <li><strong>CI/CD 자동화:</strong> PR 트리거 테스트·빌드·배포</li>
+                <li><strong>서버 성능 최적화:</strong> 싱글톤 패턴으로 DB 커넥션 제어</li>
+                <li><strong>협업:</strong> 기술 공유·코드 리뷰 주도</li>
+              </ul>
+            </section>
+            <div class="image-grid-2col">
+              <img src="websocket-chatting-pic1.png" alt="웹소켓 채팅 UI 1">
+              <img src="websocket-chatting-pic2.png" alt="웹소켓 채팅 UI 2">
+            </div>
+          </div>
+        
+          <div class="page">
+            <header class="project-header">
+              <h1>기타 활동</h1>
+            </header>
+            <section class="section">
+              <h2>오픈소스 기여</h2>
+              <div class="activity-item">
+                <h3><a href="https://github.com/Azure/co-op-translator/pull/166" target="_blank">Azure/co-op-translator (PR #166)</a></h3>
+                <ul class="project-section" style="margin-top: 15px; list-style-type: none;">
+                  <li><strong>오류 메시지 표준화:</strong> 패턴 통일로 디버깅 가이드 강화</li>
+                  <li><strong>디버깅 편의성:</strong> 오류에 파일명 포함, 원인 파악 시간 단축</li>
+                  <li><strong>문서 명확화:</strong> CV 기능 환경변수 설정 설명 보강</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        
+        </body>
+        </html>
+        
+<body>
+
+    <!-- 커버 페이지 -->
+    <div class="cover-page">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="mypicture.png" alt="민동일 프로필 사진">
+            </div>
+            
+            <div class="contact-section">
+                <div class="contact-title">CONTACT</div>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <span>010-4021-2420</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <span>tasabi0826@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <div class="tech-icons">
+                    <div class="tech-icon"><img src="python-logo.png" alt="Python"></div>
+                    <div class="tech-icon"><img src="aws-logo.png" alt="AWS"></div>
+                    <div class="tech-icon"><img src="mysql-logo.png" alt="MySQL"></div>
+                    <div class="tech-icon"><img src="nodejs-logo.png" alt="Node.js"></div>
+                    <div class="tech-icon"><img src="linux-logo.png" alt="Linux"></div>
+                    <div class="tech-icon"><img src="docker-logo.png" alt="Redis"></div>
+                    <div class="tech-icon"><img src="typescript-logo.png" alt="TypeScript"></div>
+                    <div class="tech-icon"><img src="kubernetes-logo.png" alt="Docker"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h1 class="main-title">문제의 본질을 파악하고<br>해결하는 엔지니어</h1>
+
+            <div class="profile-label">PROFILE</div>
+            <p class="profile-desc">
+                문제의 표면이 아닌 본질을 파악하고,<br>
+                원인을 명확히 규명해 해결함으로써<br>
+                시스템의 신뢰성을 책임지는 엔지니어<br>
+                민동일입니다.
+            </p>
+
+            <div class="achievements">
+                <div class="achievement-item">
+                    <div class="achievement-title">오픈소스 기여 경험</div>
+                    <div class="achievement-desc">
+                        파이썬 코드 수정으로 사용자들의 편의성 개선
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-title">인프라 구축 경험</div>
+                    <div class="achievement-desc">
+                        클라우드 환경에서 안정성과 효율성을 중점으로<br>인프라를 설계 및 구축
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-title">서버 효율화 및 실시간 기능 개발</div>
+                    <div class="achievement-desc">
+                        싱글톤 패턴으로 메모리 사용률 개선,<br>Redis를 이용한 실시간 알림 시스템 구현
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 프로젝트 페이지들 -->
+    <div class="page">
+        <header class="project-header">
+            <h1>Cloud Infrastructure for E-Commerce Platform</h1>
+            <a href="https://github.com/cloud-wave-best-zizon" target="_blank">https://github.com/cloud-wave-best-zizon</a>
+        </header>
+        <div class="project-grid">
+            <div class="project-summary-box">
+                <h3>1. 프로젝트 개요</h3>
+                <ul>
+                    <li><strong>목표:</strong> 실제 트래픽 기반 성능, 보안, 비용을 고려한 최적의 클라우드 인프라 구축</li>
+                    <li><strong>참여 인원:</strong> 5명</li>
+                    <li><strong>주요 역할:</strong> 팀장 및 PM, API 개발, EKS 클러스터 및 클라우드 아키텍처 구축, 보안 시스템 설계 등</li>
+                </ul>
+            </div>
+            <div class="project-summary-box">
+                <h3>3. 기술적 문제 해결</h3>
+                <ul>
+                    <li><strong>문제 발생:</strong> mTLS 구축 중, EKS AMI 설정 충돌로 Kubelet 시작 실패 및 ASG 노드 무한 루프 발생. </li>
+                    <li><strong>긴급 조치/분석:</strong> ASG 용량을 0으로 설정해 무한 생성을 중단후, 로그 분석</li>
+                    <li><strong>최종 해결:</strong> AWS 네이티브 솔루션(ALB, ACM Private CA)으로 전환</li>
+                </ul>
+            </div>
+        </div>
+        <section class="project-section">
+            <h2>2. 주요 역할 및 기여 (아키텍처)</h2>
+            <ul>
+                <li><strong>고성능/고효율 아키텍처 설계:</strong> Java(x86)를 Go(ARM64)로 리팩토링하여 성능 개선 및 비용 절감. EKS 기반 MSA와 Kafka 메시지 큐를 도입하여 시스템 결합도 최소화</li>
+            </ul>
+             <h3>전체 시스템 아키텍처</h3>
+            <div class="image-container"><img src="oliveyoung-aws-architecture.png" alt="올리브영 프로젝트 AWS 아키텍처"></div>
+        </section>
+    </div>
+
+    <div class="page">
+        <header class="project-header">
+            <h1>Cloud Infrastructure for E-Commerce Platform</h1>
+        </header>
+        <section class="project-section">
+             <h2>2. 주요 역할 및 기여 (성능 및 비용)</h2>
+             <ul>
+                <li><strong>실제 트래픽 기반 자동 확장(Autoscaling) 시스템 구축:</strong> 실제 세일 기간 트래픽으로 부하 테스트를 진행하여 HPA 임계치를 설정하고, Karpenter로 노드 자동 확장 환경 구현</li>
+            </ul>
+            <h3>성능 모니터링 대시보드</h3>
+            <div class="image-container">
+                <img src="oliveyoung-grafana-dashboard.png" alt="그라파나 성능 모니터링 대시보드">
+            </div>
+            <h3>모든 인프라에 태그를 붙여 비용 추적</h3>
+            <div class="image-container">
+                <img src="oliveyoung-tag-price.png" alt="태그 기반 비용 추적">
+            </div>
+        </section>
+    </div>
+
+    <div class="page">
+        <header class="project-header">
+            <h1>Cloud Infrastructure for E-Commerce Platform</h1>
+        </header>
+        <section class="project-section">
+            <h2>2. 주요 역할 및 기여 (보안 및 DevOps)</h2>
+            <ul>
+                <li><strong>보안 및 안정성을 고려한 DevOps 파이프라인 구축:</strong> GitLab CI/CD와 블루/그린 배포 전략으로 무중단 배포 파이프라인 구축. AWS VPN을 통한 개발 환경 접근 제어 및 도쿄 리전 DR 환경 구성 (RTO 2시간, RPO 15분)</li>
+                <li><strong>다계층(Multi-layered) 보안 시스템 설계 및 적용:</strong>
+                    <ul>
+                        <li><strong>사전 방어:</strong> 실제 보안 사고 기반 모의 해킹 테스트 수행 및 방어 체계 검증</li>
+                        <li><strong>인증/통신:</strong> SPIRE를 활용한 mTLS 상호 인증으로 Zero-Trust 네트워크 구현</li>
+                        <li><strong>런타임 보안:</strong> Falco를 도입하여 컨테이너 내부 비정상 행위 실시간 탐지</li>
+                        <li><strong>정적 분석:</strong> CI 파이프라인에 SonarQube를 연동하여 잠재적 보안 취약점 자동 스캔</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>보안 로깅 및 리포팅</h3>
+            <div class="image-grid-2col">
+                <img src="olive-young-opensearch-dashboard.png" alt="보안 시스템 오픈서치 대시보드">
+                <img src="oliveyoung-athena-query.png" alt="Athena를 이용한 로그 쿼리">
+            </div>
+            <h3>CI/CD 파이프라인 및 시크릿 키 자동 탐지</h3>
+            <div class="image-grid-2col">
+                <img src="oliveyoung-cicd.png" alt="CI/CD 파이프라인">
+                <img src="oliveyonug-ci-secretkey-block.png" alt="CI 과정에서 시크릿 키 자동 차단">
+            </div>
+        </section>
+    </div>
+
+    <div class="page">
+        <header class="project-header">
+            <h1>AI 기반 일기 서비스 플랫폼</h1>
+            <a href="https://github.com/inha-cloud-project-09" target="_blank">https://github.com/inha-cloud-project-09</a>
+        </header>
+        <div class="project-grid">
+            <div class="project-summary-box">
+                <h3>1. 프로젝트 개요</h3>
+                <ul>
+                    <li><strong>목표:</strong> 서버리스 인프라 기반의 AI 서비스 개발</li>
+                    <li><strong>참여 인원:</strong> 5명</li>
+                    <li><strong>주요 역할:</strong> Python 백엔드 API 개발, AWS 서버리스 아키텍처 설계/구축, 생성형 AI를 활용한 프론트엔드 프로토타이핑</li>
+                </ul>
+            </div>
+            <div class="project-summary-box">
+                <h3>3. 적용 기술</h3>
+                <ul>
+                    <li><strong>Backend:</strong> Python, FastAPI</li>
+                    <li><strong>Infra/Cloud:</strong> AWS Lambda, Bedrock, Comprehend, API Gateway, SNS, SQS, CloudWatch, S3, RDS</li>
+                    <li><strong>Tool:</strong> Claude Code Assistant</li>
+                </ul>
+            </div>
+        </div>
+        <section class="project-section">
+            <h2>2. 주요 역할 및 기여</h2>
+            <ul>
+                <li><strong>AI 기반 데이터 처리 API 개발:</strong> AWS Bedrock, Comprehend를 활용하여 텍스트 감정을 10차원 벡터로 변환하는 핵심 백엔드 API 구현</li>
+                <li><strong>AWS 서버리스 기반 이벤트 주도 아키텍처 설계:</strong> Lambda 함수를 모듈화하고, SNS/SQS를 통해 비동기 처리 방식 설계. CloudWatch Events로 일일 데이터 자동 분석 파이프라인 구현</li>
+                <li><strong>감정 벡터 기반 군집화 API 개발:</strong> 일기 텍스트에서 추출한 10차원 감정 벡터를 입력으로 받아 k-means로 군집 분류하고 군집 라벨, 중심값을 반환하는 Python API 개발</li>
+            </ul>
+        </section>
+        <div class="image-grid-2col">
+            <img src="ai-diary-ai-service-picture.png" alt="AI 일기 서비스 UI">
+            <img src="ai-diary-cloud-architecture.png" alt="AI 일기 서비스 클라우드 아키텍처">
+        </div>
+    </div>
+
+    <div class="page">
+        <header class="project-header">
+            <h1>웹소켓 기반 실시간 채팅 및 영상 공유 플랫폼 (서비스 출시 프로젝트)</h1>
+            <a href="https://github.com/ON-AIR-mate" target="_blank">https://github.com/ON-AIR-mate</a>
+        </header>
+        <div class="project-grid">
+            <div class="project-summary-box">
+                <h3>1. 프로젝트 개요</h3>
+                <ul>
+                    <li><strong>목표:</strong> 실시간 영상 공유 및 채팅 플랫폼 개발</li>
+                    <li><strong>참여 인원:</strong> 10명</li>
+                    <li><strong>주요 역할:</strong> Node.js API 개발, 클라우드 인프라 구축, CI/CD</li>
+                </ul>
+            </div>
+            <div class="project-summary-box">
+                <h3>3. 적용 기술</h3>
+                <ul>
+                    <li><strong>Backend:</strong> Node.js, Express, Redis, WebSocket</li>
+                    <li><strong>Infra/DevOps:</strong> AWS EC2, S3, RDS, GitHub Actions</li>
+                    <li><strong>Collaboration:</strong> Notion, Discord, Figma</li>
+                </ul>
+            </div>
+        </div>
+        <section class="project-section">
+            <h2>2. 주요 역할 및 기여</h2>
+            <ul>
+                <li><strong>Redis Pub/Sub을 활용한 실시간 알림 시스템 구축:</strong> 친구 요청 등 이벤트 발생 시 지연 시간이 짧은 사용자 알림 기능 구현</li>
+                <li><strong>GitHub Actions 기반 CI/CD 파이프라인 설계 및 자동화:</strong> Pull Request 생성 시 테스트, 빌드, 배포가 자동화되는 워크플로우를 구축하여 개발 생산성 향상</li>
+                <li><strong>디자인 패턴 적용을 통한 API 서버 성능 최적화:</strong> 싱글톤 패턴을 도입하여 불필요한 DB 커넥션 생성을 제어하고 서버 부하 감소 및 응답 속도 개선</li>
+                <li><strong>다직군 팀원과의 효율적인 협업:</strong> 주기적인 기술 공유와 코드 리뷰를 주도하고 PM, 디자이너와 긴밀히 소통하여 개발 일정 준수에 기여</li>
+            </ul>
+        </section>
+        <div class="image-grid-2col">
+            <img src="websocket-chatting-pic1.png" alt="웹소켓 채팅 서비스 UI 1">
+            <img src="websocket-chatting-pic2.png" alt="웹소켓 채팅 서비스 UI 2">
+        </div>
+    </div>
+    
+    <div class="page">
+        <header class="project-header">
+            <h1>기타 활동</h1>
+        </header>
+        <section class="section">
+            <h2>오픈소스 기여</h2>
+            <div class="activity-item">
+                <h3><a href="https://github.com/Azure/co-op-translator/pull/166" target="_blank">Azure/co-op-translator (Pull Request #166)</a></h3>
+                <ul class="project-section" style="margin-top: 15px; list-style-type: none;">
+                    <li><strong>오류 메시지 표준화:</strong> Python 코드의 모든 오류 메시지를 'Action failed for filename: Specific cause. Resolution hint.' 패턴으로 표준화하여 일관성을 확보하고 문제 해결을 위한 명확한 가이드라인을 제공했습니다.</li>
+                    <li><strong>디버깅 편의성 향상:</strong> 'MarkdownTranslator'에서 발생하는 타임아웃 및 LLM 구성 오류 메시지에 파일 이름을 포함시켜, 사용자가 어떤 파일에서 문제가 발생했는지 즉시 파악할 수 있도록 개선했습니다.</li>
+                    <li><strong>문서 명확화:</strong> 'ProjectTranslator'의 Computer Vision 기능 사용을 위해 필요한 환경 변수 설정에 대한 설명을 보강하여, 사용자가 더 쉽게 기능을 설정하고 사용할 수 있도록 기여했습니다.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
