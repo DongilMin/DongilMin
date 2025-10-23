@@ -20,23 +20,32 @@
       page-break-after:always;
     }
 
-    /* 공통 패널(깔끔한 얇은 테두리) */
+    /* 공통 패널 */
     .panel{border:1px solid #e5e7eb;border-radius:10px;background:#fff;padding:18px;}
 
-    /* 좌상: 프로필 사진/연락처 */
+    /* 좌상: 사진 + (옆)소개문 */
+    .profile-panel .profile-wrap{
+      display:flex; gap:10px; align-items:flex-start;
+    }
     .profile-panel .photo{
-      width:100%;height:230px;border:1px solid #e5e7eb;border-radius:10px;
-      display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:14px;background:#fff;
+      width:130px; height:170px;               /* ⬅︎ 이미지 축소 */
+      border:1px solid #e5e7eb;border-radius:10px;
+      display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff;flex-shrink:0;
     }
     .profile-panel .photo img{width:100%;height:100%;object-fit:contain;}
-    .profile-panel .title{font-size:1em;font-weight:800;color:#2563eb;margin-bottom:8px;}
+    .profile-panel .intro-mini{flex:1;min-width:0;}
+    .profile-panel .intro-mini .main-title{font-size:1.5em;font-weight:900;line-height:1.25;margin-bottom:8px;}
+    .profile-panel .intro-mini .label{font-weight:800;color:#2563eb;letter-spacing:1.1px;margin-bottom:6px;}
+    .profile-panel .intro-mini .desc{color:#374151;}
+    .profile-panel .title{margin-top:14px;font-size:1em;font-weight:800;color:#2563eb;margin-bottom:8px;}
     .contact-list{list-style:none;}
     .contact-list li{display:flex;gap:8px;align-items:center;margin:4px 0;font-size:.95em;color:#374151;}
 
-    /* 우상: 소개 */
-    .intro-panel .main-title{font-size:2.2em;font-weight:900;line-height:1.2;margin-bottom:12px;}
-    .intro-panel .label{font-weight:800;color:#2563eb;letter-spacing:1.2px;margin-bottom:8px;}
-    .intro-panel .desc{color:#374151;}
+    /* 우상: 업적 리스트 */
+    .intro-panel .achievement-list{display:grid;grid-template-columns:1fr;row-gap:10px;margin-top:2px;}
+    .intro-panel .achievement-item{border:1px solid #e5e7eb;border-radius:8px;padding:12px;background:#fbfdff;}
+    .intro-panel .achievement-title{font-weight:800;margin-bottom:4px;}
+    .intro-panel .achievement-desc{color:#4b5563;font-size:.95em;line-height:1.55;}
 
     /* 가운데 전폭: 교육/경험/자격증(풀네임) */
     .summary-panel .section{margin-top:6px;}
@@ -53,6 +62,13 @@
       border:1px solid #e5e7eb;border-radius:10px;height:50px;display:flex;align-items:center;justify-content:center;background:#fff;
     }
     .stack-panel .icon img{width:34px;height:34px;object-fit:contain;}
+
+    /* 인쇄 최적화 */
+    @media print{
+      body{background:#fff;font-size:9.5pt;}
+      .cover-page{margin:0;box-shadow:none;border:1px solid #e5e7eb;}
+      .page{box-shadow:none;margin:0;padding:20mm;min-height:297mm;}
+    }
 
     /* ===== 프로젝트 페이지 ===== */
     .page{width:210mm;min-height:297mm;padding:25mm 20mm;margin:20px auto;background:#fff;box-shadow:0 0 15px rgba(0,0,0,.08);page-break-after:always;}
@@ -71,44 +87,9 @@
     .project-section ul li{margin-bottom:12px;padding-left:18px;position:relative;}
     .project-section ul li::before{content:'✓';position:absolute;left:0;color:#2563eb;font-weight:700;}
     .project-section ul ul{margin-top:8px;padding-left:20px;}
-    .project-section strong{font-weight:700;color:#111827;}
     .image-container,.image-grid-2col{width:100%;margin:5px 0;border:1px solid #e5e7eb;border-radius:5px;padding:5px;box-sizing:border-box;}
     .image-grid-2col{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
     .image-container img,.image-grid-2col img{width:100%;height:auto;border-radius:3px;object-fit:contain;}
-    .section h2{color:#111827;font-size:1.35em;margin-bottom:15px;padding-bottom:8px;border-bottom:1.5px solid #2563eb;}
-    .activity-item{background:#f8f9fa;padding:15px;border-radius:5px;border-left:3px solid #8e44ad;}
-    .activity-item h3 a{color:#111827;text-decoration:none;}
-    .activity-item h3 a:hover{text-decoration:underline;}
-
-    /* 인쇄 최적화 */
-    @media print{
-      body{background:#fff;font-size:9.5pt;}
-      .cover-page{margin:0;box-shadow:none;border:1px solid #e5e7eb;}
-      .page{box-shadow:none;margin:0;padding:20mm;min-height:297mm;}
-      .project-summary-box,.activity-item{background:#f8f9fa !important;}
-    }
-
-    /* 반응형 */
-    @media (max-width:1200px){
-      .cover-page{grid-template-columns:1fr;grid-template-rows:auto auto auto;height:auto;}
-      .cert-list{columns:1;}
-      .stack-panel .icons{grid-template-columns:repeat(4,1fr);}
-    }
-
-    .edu-list{
-        display:flex;
-        flex-direction:column;
-        gap:8px;
-        margin-top:6px;
-    }
-    .edu-item{
-        padding:10px 12px;
-        border:1px solid #e5e7eb;
-        border-radius:8px;
-        background:#fbfdff;
-    }
-    .edu-item strong{ font-weight:800; }
-    .edu-item .meta{ color:#6b7280; font-size:.9em; margin-left:6px; }
   </style>
 </head>
 <body>
@@ -116,11 +97,22 @@
   <!-- ========================= 커버 1페이지 ========================= -->
   <section class="cover-page">
 
-    <!-- 상단 왼쪽: 프로필 사진/연락처 -->
+    <!-- 좌상: 이미지 축소 + 옆에 소개문 -->
     <div class="panel profile-panel">
-      <div class="photo">
-        <img src="mypicture.png" alt="민동일 프로필 사진">
+      <div class="profile-wrap">
+        <div class="photo">
+          <img src="mypicture.png" alt="민동일 프로필 사진">
+        </div>
+        <div class="intro-mini">
+          <h1 class="main-title">문제의 본질을 파악하고 해결하는 엔지니어</h1>
+          <div class="label">PROFILE</div>
+          <p class="desc">
+            문제의 표면이 아닌 본질을 파악하고, 원인을 명확히 규명해 해결함으로써
+            시스템의 신뢰성을 책임지는 엔지니어 민동일입니다.
+          </p>
+        </div>
       </div>
+
       <div class="title">CONTACT</div>
       <ul class="contact-list">
         <li>📞 010-4021-2420</li>
@@ -128,38 +120,41 @@
       </ul>
     </div>
 
-    <!-- 상단 오른쪽: 소개 -->
+    <!-- 우상: 업적 리스트(기존 소개 자리 대체) -->
     <div class="panel intro-panel">
-      <h1 class="main-title">문제의 본질을 파악하고<br>해결하는 엔지니어</h1>
-      <div class="label">PROFILE</div>
-      <p class="desc">
-        문제의 표면이 아닌 본질을 파악하고, 원인을 명확히 규명해 해결함으로써
-        시스템의 신뢰성을 책임지는 엔지니어 민동일입니다.
-      </p>
+      <div class="achievement-list">
+        <div class="achievement-item">
+          <div class="achievement-title">오픈소스 기여 경험</div>
+          <div class="achievement-desc">파이썬 코드 수정으로 사용자들의 편의성 개선</div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-title">인프라 구축 경험</div>
+          <div class="achievement-desc">클라우드 환경에서 안정성과 효율성을 중점으로 인프라를 설계 및 구축</div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-title">서버 효율화 및 실시간 기능 개발</div>
+          <div class="achievement-desc">싱글톤 패턴으로 메모리 사용률 개선, Redis를 이용한 실시간 알림 시스템 구현</div>
+        </div>
+      </div>
     </div>
 
-    <!-- 가운데 전폭: 교육/경험/자격증(풀네임) -->
+    <!-- 가운데 전폭: 교육/경험/자격증(풀네임 요약본) -->
     <div class="panel summary-panel" style="grid-column:1 / -1;">
       <h2 style="font-size:1.2em;font-weight:900;margin-bottom:2px;">교육 · 경험 · 자격증</h2>
 
+      <!-- 교육/경험: 사용자가 요청한 2줄만 -->
       <div class="section">
-        <h3>경력/교육/경험</h3>
-        <div class="edu-list">
-          <div class="edu-item">
-            <strong>CJ올리브네트웍스 클라우드웨이브</strong>
-            <span class="meta">2025.06–2025.08</span>
-          </div>
-          <div class="edu-item">
-            <strong>University MakeUs Challenge</strong>
-            <span class="meta">IT 연합동아리 8기 · 서버 파트 수료</span>
-          </div>
-        </div>
+        <h3>교육/경험</h3>
+        <ul>
+          <li><strong>CJ올리브네트웍스 교육 이수</strong> · 2025.06–2025.08 · 클라우드 웨이브 · 총 400시간</li>
+          <li><strong>University MakeUs Challenge</strong> · 연합동아리 8기 서버 파트 수료</li>
+        </ul>
       </div>
 
+      <!-- 자격증 · 어학 · 수상(풀네임 유지) -->
       <div class="section">
         <h3>자격증 · 어학 · 수상</h3>
         <ul class="cert-list">
-          <li><strong>Terraform Associate 003</strong> (2025.10) · HashCorp</li>
           <li><strong>AWS Certified DevOps Engineer – Professional</strong> (2025.09) · 아마존웹서비스</li>
           <li><strong>Certified Kubernetes Administrator (CKA)</strong> (2025.09) · Cloud Native Computing Foundation</li>
           <li><strong>AWS Certified SysOps Administrator – Associate</strong> (2025.08) · 아마존웹서비스</li>
