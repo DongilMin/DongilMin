@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Hi+Im+Dongil+Min;)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Hi+Im+Dongil+Min!;I'm+Software+Engineer)](https://git.io/typing-svg)
 - LinkedIn: [https://www.linkedin.com/in/dongilmin](https://www.linkedin.com/in/dongilmin)
 
 
