@@ -1,6 +1,4 @@
-# 👋 Hi, I'm Dongil Min  
-
-I'm interested in **DevOps** and **Cloud Engineering**.  
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Hi+Im+Dongil+Min;)](https://git.io/typing-svg)
 - LinkedIn: [https://www.linkedin.com/in/dongilmin](https://www.linkedin.com/in/dongilmin)
 
 
