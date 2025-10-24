@@ -1,8 +1,13 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Hi+Im+Dongil+Min!;I'm+Software+Engineer)](https://git.io/typing-svg)
-- LinkedIn: [https://www.linkedin.com/in/dongilmin](https://www.linkedin.com/in/dongilmin)
+<div align="center">
 
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Hi+Im+Dongil+Min!;I'm+Software+Engineer)](https://git.io/typing-svg)
+
+**LinkedIn:** [https://www.linkedin.com/in/dongilmin](https://www.linkedin.com/in/dongilmin)
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&row=2&column=4)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
 
 ---
 
