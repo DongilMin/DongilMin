@@ -6,7 +6,7 @@
 
 [![trophy](https://github-profile-trophy-dongilmin.vercel.app/?username=DongilMin&row=2&column=4&theme=onedark)](https://github.com/DongilMin/github-profile-trophy)
 
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=DongilMin&theme=react-dark&days=90)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=DongilMin&theme=github-compact&days=90)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 
 
