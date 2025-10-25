@@ -4,7 +4,7 @@
 
 **LinkedIn:** [https://www.linkedin.com/in/dongilmin](https://www.linkedin.com/in/dongilmin)
 
-[![trophy](https://github-profile-trophy-dongilmin.vercel.app/?username=DongilMin&row=2&column=4&theme=onedark)](https://github.com/DongilMin/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&row=2&column=4)](https://github.com/ryo-ma/github-profile-trophy)
 
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=DongilMin&theme=github-compact&days=90)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
