@@ -5,6 +5,8 @@
 **LinkedIn:** [https://www.linkedin.com/in/dongilmin](https://www.linkedin.com/in/dongilmin)
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&row=2&column=4)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=dongilmin&row=2&column=4&no-frame=true&no-bg=true&theme=onedark&v=1)](https://github.com/ryo-ma/github-profile-trophy)
+
 
 </div>
 
