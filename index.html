@@ -56,8 +56,8 @@
 
     /* 하단 전폭: 스택 아이콘 */
     .stack-panel .icons{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;margin-top:8px;}
-    .stack-panel .icon{border:1px solid #e5e7eb;border-radius:10px;height:50px;display:flex;align-items:center;justify-content:center;background:#fff;}
-    .stack-panel .icon img{width:34px;height:34px;object-fit:contain;}
+    .stack-panel .icon{border:1px solid #e5e7eb;border-radius:10px;height:60px;display:flex;align-items:center;justify-content:center;background:#fff;}
+    .stack-panel .icon img{width:60px;height:50px;object-fit:contain;}
 
     /* ===============================
        프로젝트 페이지 (원문 스타일 유지)
@@ -125,6 +125,7 @@
       <ul class="contact-list">
         <li>📞 010-4021-2420</li>
         <li>✉️ tasabi0826@gmail.com</li>
+        <li>🔗 https://github.com/DongilMin</li>
       </ul>
     </div>
 
@@ -161,6 +162,7 @@
       <div class="section">
         <h3>자격증 · 어학 · 수상</h3>
         <ul class="cert-list">
+          <li><strong>HashiCorp Certified: Terraform Associate (003)</strong> (2025.11) · HashiCorp</li>
           <li><strong>AWS Certified DevOps Engineer – Professional</strong> (2025.09) · 아마존웹서비스</li>
           <li><strong>Certified Kubernetes Administrator (CKA)</strong> (2025.09) · Cloud Native Computing Foundation</li>
           <li><strong>AWS Certified SysOps Administrator – Associate</strong> (2025.08) · 아마존웹서비스</li>
@@ -168,6 +170,7 @@
           <li><strong>리눅스마스터 2급</strong> (2025.03) · 한국정보통신인력개발센터</li>
           <li><strong>SQL개발자(SQLD)</strong> (2024.12) · 한국데이터베이스진흥센터</li>
           <li><strong>TOEIC Speaking Test</strong> (2025.10) · Intermediate High급 · 영어</li>
+          <li><strong>2025 소프트뱅크 해커톤 클라우드로 미래를 만들다 – 최우수상</strong> (2025.11) · 소프트뱅크</li>
           <li><strong>2025 AI 해커톤 – 최우수상</strong> (2025.03) · 인하대학교 및 주식회사 나눔엔젤스</li>
           <li><strong>2024 생성형 AI 홍보콘텐츠 공모전 – 입상</strong> (2024.12) · 인하대학교</li>
         </ul>
@@ -274,6 +277,49 @@
       <div class="image-grid-2col">
         <img src="oliveyoung-cicd.png" alt="CI/CD 파이프라인">
         <img src="oliveyonug-ci-secretkey-block.png" alt="CI 과정에서 시크릿 키 자동 차단">
+      </div>
+    </section>
+  </div>
+
+  <div class="page">
+    <header class="project-header">
+      <h1>Make Deployment Delightful - 배포를 즐겁게</h1>
+      <a href="https://github.com/2025-softbank-hackathon" target="_blank">https://github.com/2025-softbank-hackathon</a>
+    </header>
+    <div class="project-grid">
+      <div class="project-summary-box">
+        <h3>1. 프로젝트 개요</h3>
+        <ul>
+          <li><strong>목표:</strong> 배포 과정을 게임화하여 개발자 경험을 향상시키는 플랫폼 개발</li>
+          <li><strong>참여 인원:</strong> 4명</li>
+          <li><strong>주요 역할:</strong> AWS Cloud 인프라 설계 및 구축 (Terraform), 실시간 메트릭 수집 및 전송 시스템 개발</li>
+        </ul>
+      </div>
+      <div class="project-summary-box">
+        <h3>3. 적용 기술</h3>
+        <ul>
+          <li><strong>Backend:</strong> Python, AWS Lambda</li>
+          <li><strong>Infra/Cloud:</strong> AWS (CodePipeline, CodeBuild, CodeDeploy, API Gateway, CloudWatch, ECS, ECR), Terraform</li>
+          <li><strong>Real-time:</strong> WebSocket, CloudWatch Metrics</li>
+        </ul>
+      </div>
+    </div>
+    <section class="project-section">
+      <h2>2. 주요 역할 및 기여</h2>
+      <ul>
+        <li><strong>Terraform 기반 AWS 인프라 자동화:</strong> CodePipeline, CodeBuild, CodeDeploy를 포함한 전체 CI/CD 인프라를 Terraform으로 코드화하여 재현 가능하고 관리 용이한 환경 구축</li>
+        <li><strong>실시간 메트릭 수집 및 WebSocket 전송 시스템 개발:</strong> CloudWatch에서 CPU 사용률, 메모리, 배포 단계별 메트릭을 수집하는 Python Lambda 함수를 구현하고, API Gateway WebSocket을 통해 프론트엔드 대시보드로 실시간 전송하여 모니터링 팀원이 시각화 개발에 활용할 수 있도록 지원</li>
+        <li><strong>배포 파이프라인 통합 및 최적화:</strong> GitHub 웹훅과 AWS CodePipeline을 연동하여 코드 푸시 시 자동 빌드 및 배포가 실행되도록 구성하고, 각 단계별 상태를 CloudWatch Events를 통해 추적 가능하도록 설계</li>
+      </ul>
+      <h3>시스템 아키텍처 및 대시보드</h3>
+      <h3>시스템 아키텍처</h3>
+      <div class="image-container">
+        <img src="softbank_cloud.png" alt="AWS 아키텍처">
+      </div>
+      
+      <h3>블루-그린 배포</h3>
+      <div class="image-container">
+        <img src="blue_green.png" alt="블루-그린 배포">
       </div>
     </section>
   </div>
