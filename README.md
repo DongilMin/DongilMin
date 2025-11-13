@@ -1,13 +1,12 @@
 <div align="center">
 
-<!-- Header with Gradient Animation -->
-
 <!-- Typing Animation -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3F8FFF&center=true&vCenter=true&width=600&lines=Hi+I'm+Dongil+Min)](https://github.com/DongilMin)
 
 <br/>
+![Profile Views](https://komarev.com/ghpvc/?username=DongilMin&color=3F8FFF&style=for-the-badge&label=PROFILE+VIEWS)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&theme=tokyonight&no-frame=true&no-bg=true&column=4&margin-w=10&margin-h=10)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10&rank=SSS,SS,S,AAA,AA,A,B)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
