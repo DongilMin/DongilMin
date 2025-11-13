@@ -64,8 +64,6 @@
 <summary><b>🏅 2025 소프트뱅크 해커톤: 클라우드로 미래를 만들다</b> - 예선 최우수상</summary>
 <br/>
 
-**Fun-to-Deploy**: 배포 프로세스를 게임화하여 대시보드 시각화와 Slack 연동을 통해 개발 경험을 개선하는 솔루션
-
 [![GitHub](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/2025-softbank-hackathon)
 
 </details>
