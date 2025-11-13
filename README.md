@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Typing Animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3F8FFF&center=true&vCenter=true&width=600&lines=Hi+I'm+Dongil+Min)](https://github.com/DongilMin)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3F8FFF&center=true&vCenter=true&width=600&lines=항상+최고+수준의+목표+및+성취를+지향합니다.)](https://github.com/DongilMin)
 
 <br/>
 <img src="https://komarev.com/ghpvc/?username=DongilMin&color=3F8FFF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
