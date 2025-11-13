@@ -1,10 +1,9 @@
 <div align="center">
 
 <!-- Header with Gradient Animation -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Dongil%20Min&fontSize=42&fontAlignY=35&animation=twinkling&fontColor=fff&descAlignY=55&descSize=18"/>
 
 <!-- Typing Animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3F8FFF&center=true&vCenter=true&width=600&lines=Building+Reliable+Cloud+Infrastructure;Automating+Everything+with+DevOps;Passionate+about+Kubernetes+%26+AWS)](https://github.com/DongilMin)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=3F8FFF&center=true&vCenter=true&width=600&lines=Hi+I'm+Dongil+Min)](https://github.com/DongilMin)
 
 <br/>
 
