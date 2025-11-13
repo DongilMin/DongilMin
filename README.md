@@ -6,7 +6,7 @@
 <br/>
 <img src="https://komarev.com/ghpvc/?username=DongilMin&color=3F8FFF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10&rank=SECRET,SSS,SS,S,AAA,AA,A,B)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&theme=tokyonight&no-frame=true&no-bg=true&column=4&margin-w=10&margin-h=10&rank=SECRET,SSS,SS,S,AAA,AA,A,B)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
