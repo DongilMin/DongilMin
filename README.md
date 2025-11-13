@@ -89,7 +89,7 @@
 </details>
 
 <details>
-<summary><h1>☁️ NxtCloud 클라우드 컴퓨팅 프로젝트 - 최우수 평가</h1></summary>
+<summary><h1>☁️ NxtCloud 클라우드 컴퓨팅 프로젝트 - 10개 팀 중 최우수팀</h1></summary>
 <br/>
 
 [![GitHub](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/inha-cloud-project-09)
