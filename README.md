@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=Hi+I'm+Software+Engineer)](https://github.com/DongilMin)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&row=2&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&row=2&column=4&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 
 
 <table align="center">
