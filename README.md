@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=Hi+I'm+Software+Engineer)](https://github.com/DongilMin)
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=DongilMin&row=2&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 
 
 <table align="center">
@@ -12,10 +12,11 @@
     <td align="center"><img width="680" height="680" alt="ta003_badge" src="https://github.com/user-attachments/assets/ef43a7df-7385-47c8-b387-9e88491f3a92" /></td>
   </tr>
   <tr>
-    <td align="center"><b>CKA</b></td>
     <td align="center"><b>AWS DOP</b></td>
     <td align="center"><b>AWS SOA</b></td>
     <td align="center"><b>AWS SAA</b></td>
+     <td align="center"><b>CKA</b></td>
     <td align="center"><b>TA003</b></td>
   </tr>
 </table>
+
