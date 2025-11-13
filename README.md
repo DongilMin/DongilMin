@@ -59,8 +59,8 @@
 
 </div>
 
-<details open>
-<summary><span style="font-size: 1.3rem;"><b>🏅 2025 소프트뱅크 해커톤: 클라우드로 미래를 만들다</b> - 예선 최우수상</span></summary>
+<details>
+<summary><h3>🏅 2025 소프트뱅크 해커톤: 클라우드로 미래를 만들다 - 예선 최우수상</h3></summary>
 <br/>
 
 [![GitHub](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/2025-softbank-hackathon)
@@ -68,7 +68,7 @@
 </details>
 
 <details>
-<summary><span style="font-size: 1.3rem;"><b>☁️ CJ올리브네트웍스 클라우드 웨이브 6기</b> - 수료</span></summary>
+<summary><h3>☁️ CJ올리브네트웍스 클라우드 웨이브 6기 - 수료</h3></summary>
 <br/>
 
 [![GitHub](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cloud-wave-best-zizon)
@@ -76,7 +76,7 @@
 </details>
 
 <details>
-<summary><span style="font-size: 1.3rem;"><b>🎓 UMC Node.js 8기</b> - 수료</span></summary>
+<summary><h3>🎓 UMC Node.js 8기 - 수료</h3></summary>
 <br/>
 
 [![GitHub](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ON-AIR-mate)
@@ -84,7 +84,7 @@
 </details>
 
 <details>
-<summary><span style="font-size: 1.3rem;"><b>☁️ NxtCloud 클라우드 컴퓨팅 프로젝트</b> - 최우수 평가</span></summary>
+<summary><h3>☁️ NxtCloud 클라우드 컴퓨팅 프로젝트 - 최우수 평가</h3></summary>
 <br/>
 
 [![GitHub](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/inha-cloud-project-09)
@@ -92,11 +92,10 @@
 </details>
 
 <details>
-<summary><span style="font-size: 1.3rem;"><b>🏆 나눔엔젤스 해커톤</b> - 최우수상</span></summary>
+<summary><h3>🏆 나눔엔젤스 해커톤 - 최우수상</h3></summary>
 <br/>
 
 [![GitHub](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/2025-ChainCert-Inha)
 
 </details>
-
 
