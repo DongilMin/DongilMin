@@ -15,7 +15,7 @@
 
 <div align="center">
 
-## Certifications & Achievements
+## Certifications
 
 </div>
 
@@ -24,29 +24,26 @@
   <tr>
     <td align="center" width="150">
       <img width="120" height="120" alt="AWS DevOps Professional" src="https://github.com/user-attachments/assets/82f3c0c8-7bef-4391-9f7b-9bb331ccbc03" />
-      <br/><b>AWS DOP</b>
-      <br/><sub>DevOps Professional</sub>
     </td>
     <td align="center" width="150">
       <img width="120" height="120" alt="AWS SysOps Administrator" src="https://github.com/user-attachments/assets/ea266145-f501-4a36-96d0-e684e08260d2" />
-      <br/><b>AWS SOA</b>
-      <br/><sub>SysOps Administrator</sub>
     </td>
     <td align="center" width="150">
       <img width="120" height="120" alt="AWS Solutions Architect" src="https://github.com/user-attachments/assets/6af58966-8c2a-4f1c-b9ed-3ac72ff64532" />
-      <br/><b>AWS SAA</b>
-      <br/><sub>Solutions Architect</sub>
     </td>
     <td align="center" width="150">
       <img width="120" height="120" alt="Certified Kubernetes Administrator" src="https://github.com/user-attachments/assets/7c795da6-759c-40ba-8f97-caba83727f41" />
-      <br/><b>CKA</b>
-      <br/><sub>Kubernetes Administrator</sub>
     </td>
     <td align="center" width="150">
       <img width="130" height="130" alt="Terraform Associate" src="https://github.com/user-attachments/assets/ef43a7df-7385-47c8-b387-9e88491f3a92" />
-      <br/><b>TA003</b>
-      <br/><sub>Terraform Associate</sub>
     </td>
+  </tr>
+  <tr>
+    <td align="center"><b>AWS DOP</b></td>
+    <td align="center"><b>AWS SOA</b></td>
+    <td align="center"><b>AWS SAA</b></td>
+    <td align="center"><b>CKA</b></td>
+    <td align="center"><b>TA003</b></td>
   </tr>
 </table>
 </div>
