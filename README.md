@@ -64,7 +64,7 @@
 </details>
 
 <details>
-<summary><h1>🏅 2025 소프트뱅크 해커톤: 클라우드로 미래를 만들다 - 예선 최우수상</h1></summary>
+<summary><h1>🏅 2025 소프트뱅크 해커톤: 클라우드로 미래를 만들다 - 최우수상</h1></summary>
 <br/>
 
 [![GitHub](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/2025-softbank-hackathon)
