@@ -56,7 +56,7 @@
 </div>
 
 <details>
-<summary><h1>💻 Microsoft Azure 오픈소스 기여</h1></summary>
+<summary><h1>💻 Microsoft Azure Translator 오픈소스 기여</h1></summary>
 <br/>
 
 [![GitHub](https://img.shields.io/badge/Pull_Request-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Azure/co-op-translator/pull/166)
