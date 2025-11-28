@@ -36,6 +36,9 @@
     <td align="center" width="150">
       <img width="130" height="130" alt="Terraform Associate" src="https://github.com/user-attachments/assets/ef43a7df-7385-47c8-b387-9e88491f3a92" />
     </td>
+    <td align="center" width="150">
+      <img width="130" height="130" alt="Azure Administrator" src="https://github.com/user-attachments/assets/996b27b7-6e5b-48de-ba86-d2cb9bca9feb" />
+    </td>
   </tr>
   <tr>
     <td align="center"><b>AWS DOP</b></td>
@@ -43,6 +46,7 @@
     <td align="center"><b>AWS SAA</b></td>
     <td align="center"><b>CKA</b></td>
     <td align="center"><b>TA003</b></td>
+    <td align="center"><b>AZ104</b></td>
   </tr>
 </table>
 </div>
