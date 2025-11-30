@@ -14,47 +14,6 @@
 
 <div align="center">
 
-## Certifications
-
-</div>
-
-<div align="center">
-<table>
-  <tr>
-    <td align="center" width="150">
-      <img width="120" height="120" alt="AWS DevOps Professional" src="https://github.com/user-attachments/assets/82f3c0c8-7bef-4391-9f7b-9bb331ccbc03" />
-    </td>
-    <td align="center" width="150">
-      <img width="120" height="120" alt="AWS SysOps Administrator" src="https://github.com/user-attachments/assets/ea266145-f501-4a36-96d0-e684e08260d2" />
-    </td>
-    <td align="center" width="150">
-      <img width="120" height="120" alt="AWS Solutions Architect" src="https://github.com/user-attachments/assets/6af58966-8c2a-4f1c-b9ed-3ac72ff64532" />
-    </td>
-    <td align="center" width="150">
-      <img width="120" height="120" alt="Certified Kubernetes Administrator" src="https://github.com/user-attachments/assets/7c795da6-759c-40ba-8f97-caba83727f41" />
-    </td>
-    <td align="center" width="150">
-      <img width="130" height="130" alt="Terraform Associate" src="https://github.com/user-attachments/assets/ef43a7df-7385-47c8-b387-9e88491f3a92" />
-    </td>
-    <td align="center" width="150">
-      <img width="130" height="130" alt="Azure Administrator" src="https://github.com/user-attachments/assets/996b27b7-6e5b-48de-ba86-d2cb9bca9feb" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>AWS DOP</b></td>
-    <td align="center"><b>AWS SOA</b></td>
-    <td align="center"><b>AWS SAA</b></td>
-    <td align="center"><b>CKA</b></td>
-    <td align="center"><b>TA003</b></td>
-    <td align="center"><b>AZ104</b></td>
-  </tr>
-</table>
-</div>
-
----
-
-<div align="center">
-
 ## Featured Projects & Activities
 
 </div>
