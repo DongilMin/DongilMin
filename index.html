@@ -1,4 +1,4 @@
-https://dongilmin.github.io/DongilMin/<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
@@ -11,56 +11,90 @@ https://dongilmin.github.io/DongilMin/<!DOCTYPE html>
     body{font-family:'Noto Sans KR',sans-serif;background:#f4f4f4;font-size:10pt;line-height:1.6;color:#111827;}
 
     /* ===============================
-       커버 페이지 (1페이지)
-       상단: 좌(사진+옆 소개문), 우(업적)
-       중간: 요약(두 줄) + 자격/수상(풀네임)
-       하단: 스택 아이콘
+       커버 페이지 (1페이지) - 수정됨
        =============================== */
     .cover-page{
       width:210mm;height:297mm;margin:20px auto;background:#fff;
-      display:grid;grid-template-columns: 1fr 1fr;grid-template-rows:auto auto auto;gap:14px;
+      display:grid;
+      /* 좌우 1:1 비율, 행은 [프로필/성과] [프로필/수상] [스택] 순서로 자동 조절 */
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr auto; 
+      gap:14px;
       padding:18px;border:1px solid #e5e7eb;border-radius:8px;box-shadow:0 0 18px rgba(0,0,0,.06);
       page-break-after:always;
     }
     .panel{border:1px solid #e5e7eb;border-radius:10px;background:#fff;padding:18px;}
 
-    /* 좌상: 사진 + (옆) 소개문 + Contact */
-    .profile-panel .profile-wrap{display:flex;gap:8px;align-items:flex-start;}
+    /* 좌측: 프로필 (2개의 행을 합쳐서 길게 사용) */
+    .profile-panel {
+      grid-column: 1;
+      grid-row: 1 / 3; /* 세로로 길게 차지 */
+      display:flex; flex-direction:column; justify-content:space-between;
+    }
+    .profile-panel .profile-wrap{display:flex;gap:8px;align-items:flex-start; flex-direction:column;}
+    
+    /* 사진 크기 */
     .profile-panel .photo{
-      width:130px;height:210px;border:1px solid #e5e7eb;border-radius:5px;
+      width:100%; height:250px; /* 사진 영역을 좀 더 시원하게 키움 */
+      border:1px solid #e5e7eb;border-radius:5px;
       display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff;flex-shrink:0;
+      margin-bottom: 15px;
     }
     .profile-panel .photo img{width:100%;height:100%;object-fit:contain;}
+    
     .profile-panel .intro-mini{flex:1;min-width:0;}
     .profile-panel .intro-mini .main-title{font-size:1.8em;font-weight:900;line-height:1.25;margin-bottom:8px;}
     .profile-panel .intro-mini .label{font-weight:800;color:#2563eb;letter-spacing:1.1px;margin-bottom:6px;}
-    .profile-panel .intro-mini .desc{color:#374151;}
-    .profile-panel .title{margin-top:14px;font-size:1em;font-weight:800;color:#2563eb;margin-bottom:8px;}
+    .profile-panel .intro-mini .desc{color:#374151; word-break: keep-all; font-size: 1.05em;}
+    
+    .profile-panel .title{margin-top:20px;font-size:1.1em;font-weight:800;color:#2563eb;margin-bottom:8px;}
     .contact-list{list-style:none;}
-    .contact-list li{display:flex;gap:8px;align-items:center;margin:4px 0;font-size:.95em;color:#374151;}
+    .contact-list li{display:flex;gap:8px;align-items:center;margin:6px 0;font-size:1em;color:#374151;}
 
-    /* 우상: 업적 리스트 */
-    .intro-panel .achievement-list{display:grid;grid-template-columns:1fr;row-gap:10px;margin-top:2px;}
-    .intro-panel .achievement-item{border:1px solid #e5e7eb;border-radius:8px;padding:12px;background:#fbfdff;}
-    .intro-panel .achievement-title{font-weight:800;margin-bottom:4px;}
-    .intro-panel .achievement-desc{color:#4b5563;font-size:.95em;line-height:1.55;}
+    /* 우측 상단: 업적 리스트 */
+    .intro-panel { 
+        grid-column: 2; 
+        grid-row: 1;
+    }
+    .intro-panel .achievement-list{display:grid;grid-template-columns:1fr;row-gap:8px;margin-top:2px;}
+    .intro-panel .achievement-item{border:1px solid #e5e7eb;border-radius:8px;padding:10px;background:#fbfdff;}
+    .intro-panel .achievement-title{font-weight:800;margin-bottom:3px; font-size: 0.95em;}
+    .intro-panel .achievement-desc{color:#4b5563;font-size:.9em;line-height:1.4;}
 
-    /* 가운데 전폭: 교육/경험(요약 2줄만) + 자격/어학/수상(풀네임) */
-    .summary-panel .section{margin-top:6px;}
-    .summary-panel .section h3{font-size:1.05em;font-weight:900;margin:8px 0 6px;}
-    .summary-panel .meta{color:#6b7280;font-size:.92em;margin-bottom:4px;}
-    .summary-panel ul{margin-left:1.1em;}
-    .summary-panel li{margin:3px 0;}
-    .cert-list{columns:2;column-gap:24px;}
-    .cert-list li{break-inside:avoid;}
+    /* 우측 하단: 수상 내역 (신규 추가) */
+    .award-panel {
+        grid-column: 2;
+        grid-row: 2;
+        display: flex; flex-direction: column; 
+    }
+    .award-list { list-style: none; margin-top: 5px; }
+    .award-item { 
+        position: relative; 
+        padding-left: 12px; 
+        margin-bottom: 10px; 
+        font-size: 0.92em; 
+        color: #374151; 
+        line-height: 1.4;
+    }
+    .award-item::before {
+        content: '•'; position: absolute; left: 0; color: #2563eb; font-weight: bold;
+    }
+    .award-name { font-weight: 700; color: #111827; display: block; margin-bottom: 2px;}
+    .award-detail { font-size: 0.9em; color: #555; display: block;}
 
-    /* 하단 전폭: 스택 아이콘 */
-    .stack-panel .icons{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;margin-top:8px;}
-    .stack-panel .icon{border:1px solid #e5e7eb;border-radius:10px;height:60px;display:flex;align-items:center;justify-content:center;background:#fff;}
-    .stack-panel .icon img{width:60px;height:50px;object-fit:contain;}
+    /* 하단 전폭: 스택 아이콘 (세로 길이 축소) */
+    .stack-panel {
+        grid-column: 1 / -1; 
+        grid-row: 3;
+        padding: 10px 18px; /* 패딩 축소 */
+    }
+    .stack-panel .icons{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;margin-top:4px;}
+    /* 아이콘 박스 높이 축소 (60px -> 45px) */
+    .stack-panel .icon{border:1px solid #e5e7eb;border-radius:8px;height:45px;display:flex;align-items:center;justify-content:center;background:#fff;}
+    .stack-panel .icon img{width:45px;height:30px;object-fit:contain;} /* 이미지 크기도 조절 */
 
     /* ===============================
-       프로젝트 페이지 (원문 스타일 유지)
+       프로젝트 페이지 (기존 유지)
        =============================== */
     .page{width:210mm;min-height:297mm;padding:25mm 20mm;margin:20px auto;background:#fff;box-shadow:0 0 15px rgba(0,0,0,.08);page-break-after:always;}
     .page:last-child{page-break-after:auto;}
@@ -96,41 +130,45 @@ https://dongilmin.github.io/DongilMin/<!DOCTYPE html>
 
     /* 반응형(커버만) */
     @media (max-width:1200px){
-      .cover-page{grid-template-columns:1fr;grid-template-rows:auto auto auto;height:auto;}
+      .cover-page{grid-template-columns:1fr;grid-template-rows:auto auto auto auto;height:auto;}
+      .profile-panel { grid-column: 1; grid-row: auto; }
+      .intro-panel { grid-column: 1; grid-row: auto; }
+      .award-panel { grid-column: 1; grid-row: auto; }
+      .stack-panel { grid-column: 1; grid-row: auto; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ========================= 1페이지 (커버) ========================= -->
   <section class="cover-page">
 
-    <!-- 좌상: 이미지 축소 + 옆 소개문 + Contact -->
     <div class="panel profile-panel">
-      <div class="profile-wrap">
-        <div class="photo">
-          <img src="mypicture.png" alt="민동일 프로필 사진">
-        </div>
-        <div class="intro-mini">
-          <h3 class="main-title">문제의 본질을 파악하고 해결하는 엔지니어</h3>
-          <div class="label">PROFILE</div>
-          <p class="desc">
-            문제의 표면이 아닌 본질을 파악하고, 원인을 명확히 규명해 해결함으로써
-            안정성을 책임지는 엔지니어 민동일입니다.
-          </p>
-        </div>
-      </div>
+      <div>
+          <div class="profile-wrap">
+            <div class="photo">
+              <img src="mypicture.png" alt="민동일 프로필 사진">
+            </div>
+            <div class="intro-mini">
+              <h3 class="main-title">문제의 본질을 파악하고 해결하는 엔지니어</h3>
+              <div class="label">PROFILE</div>
+              <p class="desc">
+                문제의 표면이 아닌 본질을 파악하고, 원인을 명확히 규명해 해결함으로써
+                안정성을 책임지는 엔지니어 민동일입니다.
+              </p>
+            </div>
+          </div>
 
-      <div class="title">CONTACT</div>
-      <ul class="contact-list">
-        <li>📞 010-4021-2420</li>
-        <li>✉️ tasabi0826@gmail.com</li>
-        <li>🔗 https://github.com/DongilMin</li>
-      </ul>
+          <div class="title">CONTACT</div>
+          <ul class="contact-list">
+            <li>📞 010-4021-2420</li>
+            <li>✉️ tasabi0826@gmail.com</li>
+            <li>🔗 https://github.com/DongilMin</li>
+          </ul>
+      </div>
     </div>
 
-    <!-- 우상: 업적 (기존 소개문 자리에 배치) -->
     <div class="panel intro-panel">
+      <h2 style="font-size:1.05em;font-weight:900;margin-bottom:8px; color:#2563eb;">주요 성과</h2>
       <div class="achievement-list">
         <div class="achievement-item">
           <div class="achievement-title">Microsoft Azure 오픈소스 기여 경험</div>
@@ -144,16 +182,28 @@ https://dongilmin.github.io/DongilMin/<!DOCTYPE html>
           <div class="achievement-title">서버 효율화 및 실시간 기능 개발</div>
           <div class="achievement-desc">싱글톤 패턴으로 메모리 사용률 개선, Redis를 이용한 실시간 알림 시스템 구현</div>
         </div>
-        <div class="achievement-item">
-          <div class="achievement-title">다양한 대내외활동에서의 최고의 목표 및 성과 달성 경험</div>
-          <div class="achievement-desc">소프트뱅크 해커톤 "클라우드로 미래를 만들다" 등</div>
-        </div>
       </div>
     </div>
 
-    <!-- 하단 전폭: 스택 아이콘 -->
-    <div class="panel stack-panel" style="grid-column:1 / -1;">
-      <h2 style="font-size:1.05em;font-weight:900;margin-bottom:6px;">기술 스택</h2>
+    <div class="panel award-panel">
+      <h2 style="font-size:1.05em;font-weight:900;margin-bottom:8px; color:#2563eb;">수상 내역</h2>
+      <ul class="award-list">
+        <li class="award-item">
+            <span class="award-name">소프트뱅크 해커톤 - 최우수상</span>
+            <span class="award-detail">'Make Deployment Delightful' 프로젝트</span>
+        </li>
+        <li class="award-item">
+            <span class="award-name">2025 AI 해커톤 - 최우수상</span>
+            <span class="award-detail">블록체인을 활용한 비즈니스 모델 기획 및 개발</span>
+        </li>
+        <li class="award-item">
+            <span class="award-name">생성형 AI 홍보콘텐츠 공모전 - 입상</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="panel stack-panel">
+      <h2 style="font-size:1em;font-weight:900;margin-bottom:4px;">기술 스택</h2>
       <div class="icons">
         <div class="icon"><img src="python-logo.png" alt="Python"></div>
         <div class="icon"><img src="aws-logo.png" alt="AWS"></div>
@@ -167,11 +217,6 @@ https://dongilmin.github.io/DongilMin/<!DOCTYPE html>
     </div>
 
   </section>
-  <!-- ========================= /1페이지 ========================= -->
-
-
-  <!-- ========================= 2페이지+ (원문 복구) ========================= -->
-
   <div class="page">
     <header class="project-header">
       <h1>Cloud Infrastructure for E-Commerce Platform</h1>
@@ -289,7 +334,6 @@ https://dongilmin.github.io/DongilMin/<!DOCTYPE html>
       <div class="image-container">
         <img src="softbank_cloud.png" alt="AWS 아키텍처">
       </div>
-    
     </section>
   </div>
 
